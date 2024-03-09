@@ -25,17 +25,14 @@ function App(){
     <>
       <div className={`container ${theme}`}> 
         <NavBar theme={theme} setTheme={setTheme}></NavBar>
+        <Routes>
+          <Route path="/home" element={<Home/>} ></Route>
+          <Route path="/products" element={<Products/>} ></Route>
+          <Route path="/contact" element={<Contact/>} ></Route>
+          <Route path="/aboutUs" element={<AboutUs/>} ></Route>
+        </Routes>
       </div>
-      <div>
-      <Routes>
-        <Route path="/home" element={<Home/>} ></Route>
-        <Route path="/products" element={<Products/>} ></Route>
-        <Route path="/contact" element={<Contact/>} ></Route>
-        <Route path="/aboutUs" element={<AboutUs/>} ></Route>
-      </Routes>
-      </div>
-    </>
-    
+    </> 
   );
 }
 

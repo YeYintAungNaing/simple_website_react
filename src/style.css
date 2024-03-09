@@ -21,7 +21,6 @@ img{
 }
 
 
-
 .navBar{
     width: 100%;
     display: flex;
@@ -40,12 +39,11 @@ img{
 .menu{
     flex:1;
     text-align: center;
-
 }
 
 .menu li {           /*grabbing each li ele under menu parent*/
     display: inline-block;/* this does not work in .menu */
-    margin: 10px 20px;   /* top-button margin and margin between menu ele */
+    margin: 10px 10px;   /* top-button margin and margin between menu ele */
     font-size: 24px;
     cursor: pointer;
 }
