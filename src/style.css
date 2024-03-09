@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background: #a5eff3;
+}
+
+.container.dark{
+    background: rgb(0, 0, 0);
+}
+
+img{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+
+
+.navBar{
+    width: 100%;
+    display: flex;
+    align-items: center;    /*align vetical */
+    justify-content: space-between;
+    background: #fff;
+    padding: 7px 7%;
+}
+
+.dark .navBar{
+    background: rgb(128, 124, 124);
+    color: white;
+}
+
+
+.menu{
+    flex:1;
+    text-align: center;
+
+}
+
+.menu li {           /*grabbing each li ele under menu parent*/
+    display: inline-block;/* this does not work in .menu */
+    margin: 10px 20px;   /* top-button margin and margin between menu ele */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu a {           /* 'li a' works*/
+    text-decoration: none;   /* remov underline*/
+    color: inherit;         /*use the intended color*/
+}
+
+
+.search{
+    display: flex;
+    align-items: center;
+    background: #a5eff3;
+    padding: 10px 10px;
+    border-radius: 40px;
+    height: 70px;
+}
+
+.search-box {
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 24px;
+    max-width: 200px;
+    color: black;
+}
+
+
+.dark .search-box{
+    color: #fff;     /* font color for input */ 
+}
+
+.dark .search{
+    background: rgb(83, 82, 82);   
+}
+
+
+
